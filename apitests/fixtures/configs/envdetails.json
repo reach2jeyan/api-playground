@@ -1,0 +1,13 @@
+{
+    "endpoints": {
+        "services": "/services"
+    },
+    "baseUrl": {
+        "localhost":"http://localhost:3030"
+    },
+    "assertResponsecodes": {
+        "Ok": 200,
+        "serverError":500,
+        "badRequest":400
+    }
+}
