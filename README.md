@@ -74,6 +74,8 @@ The work of defining an API is difficult, and creating consistency within an org
 
 Run `npm test` and all the tests in the `test/` directory will be executed. Our test suite uses a combination of the [Mocha JavaScript test framework](https://mochajs.org/) and [semistandard](https://github.com/Flet/semistandard) to ensure code quality and consistency.
 
+To run apitests, navigate to `apitests/tests` directory after switching on server and perform `pytest`
+
 ## Help
 
 If you have questions, encounter a bug or would like to submit a new feature, please [open an issue on GitHub](https://github.com/bestbuy/api-playground/issues).
