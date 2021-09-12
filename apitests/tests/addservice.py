@@ -25,12 +25,7 @@ class Tests(unittest.TestCase):
         dummyservicename = ServiceRequest.read_env(self,"../fixtures/testdata/newservicenames.json",None,None)
         assert response[0]["name"] == dummyservicename["name"]
 
-    def test_it_should_not_add_service_without_proper_parameters(self):
-        requests_helper = ServiceRequest()
-        response = requests_helper.perform_operation("addservice",None,environment + service_endpoint)
-        #dummy name is what faker dumps as a json to the testdata, so we want to compare if the updated in server is same as what is dumped
-        dummyservicename = ServiceRequest.read_env(self,"../fixtures/testdata/newservicenames.json",None,None)
-        assert response[0]["name"] == dummyservicename["name"]
+
   
 
 
